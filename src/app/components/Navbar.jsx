@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div>
       <NavigationMenu className="m-2 p-4 ">
-        <NavigationMenuList className="gap-4">
+        <NavigationMenuList className="gap-4 cursor-pointer">
           <NavigationMenuItem className="hover:underline decoration-orange-400 ">
             Collections
           </NavigationMenuItem>
