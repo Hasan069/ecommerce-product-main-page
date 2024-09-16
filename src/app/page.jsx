@@ -4,12 +4,13 @@ import Image from "next/image";
 import Logo from "../../public/logo.svg";
 import cart from "../../public/icon-cart.svg";
 import avatar from "../../public/image-avatar.png";
-import product1 from "../../public/image-product-1.jpg"
+import ProductImageAndPopover from "./components/ProductImageAndPopover";
+import ProductDetails from "./components/ProductDetails";
 
 export default function Home() {
   return (
     <>
-      <div>
+      <div >
         <div className="flex justify-around  m-6  relative ">
           <div className="flex gap-12">
             <Image src={Logo} alt="Logo" className="mt-6 h-6" />
@@ -20,12 +21,14 @@ export default function Home() {
             <Image src={avatar} alt="User Avatar" className="h-12 w-12" />
           </div>
         </div>
-        <div className="m-12 relative top-24 justify-between">
-          <Image src={product1} className="h-1/2 w-1/4 rounded-2xl" />
-        </div>
-
 
       </div>
+        
+        <div className="flex m-20 p-20">
+        <ProductImageAndPopover />
+        <ProductDetails/>
+
+        </div>
     </>
   );
 }
