@@ -6,6 +6,7 @@ import cart from "../../public/icon-cart.svg";
 import avatar from "../../public/image-avatar.png";
 import ProductImageAndPopover from "./components/ProductImageAndPopover";
 import ProductDetails from "./components/ProductDetails";
+import AddToCart from "./components/AddToCart";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <ProductImageAndPopover />
         <div>
           <ProductDetails />
+          <AddToCart />
         </div>
       </div>
     </>

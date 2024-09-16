@@ -19,7 +19,9 @@ const ProductDetails = () => {
         </h1>
       </div>
 
-      <h2 className="mt-5 text-2xl font-bold line-through text-slate-500">$250.00</h2>
+      <h2 className="mt-5 text-2xl font-bold line-through text-slate-500">
+        $250.00
+      </h2>
     </div>
   );
 };
