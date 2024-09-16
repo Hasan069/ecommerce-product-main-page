@@ -10,8 +10,8 @@ import ProductDetails from "./components/ProductDetails";
 export default function Home() {
   return (
     <>
-      <div >
-        <div className="flex justify-around  m-6  relative ">
+      <div className="">
+        <div className="flex justify-around  m-6  relative">
           <div className="flex gap-12">
             <Image src={Logo} alt="Logo" className="mt-6 h-6" />
             <Navbar />
@@ -21,14 +21,14 @@ export default function Home() {
             <Image src={avatar} alt="User Avatar" className="h-12 w-12" />
           </div>
         </div>
-
       </div>
-        
-        <div className="flex m-20 p-20">
-        <ProductImageAndPopover />
-        <ProductDetails/>
 
+      <div className="flex mt-28 w-[100%] h-[100%]  ">
+        <ProductImageAndPopover />
+        <div>
+          <ProductDetails />
         </div>
+      </div>
     </>
   );
 }
