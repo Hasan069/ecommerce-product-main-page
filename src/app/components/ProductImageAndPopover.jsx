@@ -15,14 +15,14 @@ const ProductImageAndPopover = () => {
     <>
       <div className="relative left-80">
         <Image
-          src={product1}
+          src={product1} alt="product-1"
           className="h-[80%] w-[45%] rounded-2xl relative"
         />
         <div className="flex gap-6 mt-6 h-28 w-24 cursor-pointer">
-          <Image src={productThumb1} className="rounded-2xl" />
-          <Image src={productThumb2} className="rounded-2xl" />
-          <Image src={productThumb3} className="rounded-2xl" />
-          <Image src={productThumb4} className="rounded-2xl" />
+          <Image src={productThumb1} alt="product-thumb" className="rounded-2xl" />
+          <Image src={productThumb2} alt="product-thumb" className="rounded-2xl" />
+          <Image src={productThumb3} alt="product-thumb" className="rounded-2xl" />
+          <Image src={productThumb4} alt="product-thumb" className="rounded-2xl" />
         </div>
       </div>
     </>
