@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/Navbar";
 import Image from "next/image";
 import Logo from "../../public/logo.svg";
@@ -9,6 +8,7 @@ import ProductDetails from "./components/ProductDetails";
 import Cart from "./components/Cart";
 
 export default function Home() {
+
   return (
     <>
       <div className="">
@@ -17,9 +17,15 @@ export default function Home() {
             <Image src={Logo} alt="Logo" className="mt-6 h-6" />
             <Navbar />
           </div>
-          <div className="gap-12 flex cursor-pointer">
-            <Image src={cart} alt="Cart Icon" className="h-5 left-10 mt-6 " />
-            <Image src={avatar} alt="User Avatar" className="h-12 w-12" />
+          <div className="gap-12 flex ">
+            <button>
+              <Image src={cart} alt="Cart Icon" className="h-5 left-10  " />
+            </button>
+            <Image
+              src={avatar}
+              alt="User Avatar"
+              className="h-12 w-12 cursor-pointer"
+            />
           </div>
         </div>
       </div>
